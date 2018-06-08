@@ -3,7 +3,7 @@ Various datasets on traffic light (TL) detection are aggregated and cleaned. The
 
 Copyrights belong to the owners of their respective datasets.
 
-# Date Format
+# Data Format
 Images can be in RGB or in grayscale. They can be resized, or not. Bounding boxes can be expressed in two pairs of coordinates or in one along with width and height information. Traffic lights can be categorized into three categories (red/yellow/green) or two (go/stop). Directional information on traffic lights can be conveyed, or not. In view of such a diverse range of formatting options, a script is provided to properly retrieve and format the data and their corresponding labels. That said, the general format is as follows:
 
 > /path/to/image/file; WIDTH; HEIGHT; 
@@ -34,10 +34,17 @@ While this repository is by no means complete, or original, it is intended for r
 
 ## Generation Script
 
-### Common Usage
+#### Common Usage
 
 ## Evaluation Script
 
-##### filename/file path
-##### bounding box
-##### traffic light signal
+#### filename/file path
+#### bounding box
+#### traffic light signal
+
+# Functions
+
+#### Bash
+#### C
+#### Python
+#### MATLAB
