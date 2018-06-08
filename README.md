@@ -1,5 +1,5 @@
 # Cleaned Traffic Light Datasets
-Various datasets on traffic light (TL) detection are aggregated and cleaned. They include [ApolloScape](http://data.apollo.auto/?locale=en-us&lang=en), [Bosch Small TL Dataset](https://hci.iwr.uni-heidelberg.de/node/6132/), [WPI TL Dataset](http://computing.wpi.edu/dataset.html), and [Kaggle LISA TL Dataset](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset/data). 
+Various datasets on traffic light (TL) detection are aggregated and cleaned. They include [ApolloScape](http://data.apollo.auto/?locale=en-us&lang=en), [Bosch Small TL Dataset](https://hci.iwr.uni-heidelberg.de/node/6132/), [WPI TL Dataset](http://computing.wpi.edu/dataset.html), and [LISA TL Dataset](http://cvrr.ucsd.edu/vivachallenge/index.php/traffic-light/traffic-light-detection/). 
 
 Copyrights belong to the owners of their respective datasets.
 
