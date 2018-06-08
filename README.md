@@ -15,36 +15,48 @@ Images can be in RGB or in grayscale. They can be resized, or not. Bounding boxe
 
 For example, a line in the `.csv` file produced by running `sh gen.sh -if jpg -is 224,224 --anchored --directional` might look like this:
 
-> /home/wching/tld/data/img/0001.jpg;224;224;"101;124;15;35;red;left"
+> /home/wching/tld/data/img/0001.jpg;224;224;"101;124;16;36;red;left"
+
+In this case, a JPEG image called 0001.jpg of size 224(W)×224(H) is loaded. There is one traffic light found. It is centered at Cartesian coordinate (101,124); it has a size of 16(W)×36(H); it shows a protected-left-turn signal that's red. (In other words, its upper left corner is at (93,106), and its lower right corner is at (109,142).)
 
 ### Example 2
 
 For another example, a line in the `.csv` file produced by running `sh gen.sh -if png -ic 640,640 --bounded --binary --nondirectional` might look like this:
 
-> /home/wching/tld/data/img/0001.png;224;224;"101;124;15;35;red;left"
+> /home/wching/tld/data/img/0002.png;640;480;"93;106;109;142;green;left";"144;110;158;142;red;round"
+
+In this case, a PNG image called 0002.png of size 640(W)×480(H) is loaded. There are two traffic lights found. The first one has its upper left corner at (93,106) and its lower right corner at (109,142); it shows a protected-left-turn signal that's green. The second one has its upper left corner at (144,110) and its lower right corner at (158,142); it shows a general, round signal that's red. (In other words, one traffic light is centered at (101,124) and has a size of 16(W)×36(H). The other is centered at (151,126) and has a size of 14(W)×32(H).)
 
 ### Example 3
 
 For one last example, a line in the `.csv` file produced by running `sh gen.sh --no-resize --anchored --ternary` might look like this:
 
-> /home/wching/tld/data/img/0001.jpg;1920;1080;";;;;;"
+> /home/wching/tld/data/img/0003.jpg;1920;1080;";;;;;"
+
+In this case, a JPEG image called 0003.jpg of size 1920(W)×1080(H) is loaded. There are no traffic lights found.
 
 # 1. Scripts
 While this repository is by no means complete, or original, it is intended for rapid evaluation of traffic light detection algorithms. For that purpose, two simple scripts are provided - one that generate the needed dataset, and another that calculates accuracy.
 
 ## Generation Script
+This script generates a `.csv` file with a designated number of lines, each conforming to the specified format.
+
+#### Dependency
+This script needs `Bash` and `sed` to function.
 
 #### Common Usage
 
 ## Evaluation Script
 
+#### Dependency
+This script needs `Bash`, `sed`, and `bc` to function.
+
 #### filename/file path
 #### bounding box
 #### traffic light signal
 
-# 2. Functions
+# 2. Output Saving Functions
 
-#### Bash
 #### C
 #### Python
 #### MATLAB
