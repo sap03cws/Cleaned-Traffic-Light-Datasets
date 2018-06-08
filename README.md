@@ -5,4 +5,9 @@ Admittedly, this repository is by no means complete, or original, but it is inte
 
 Copyrights belong to the owners of their respective datasets.
 
-## Generator Script
+# Date Format
+
+# Scripts
+## Generation Script
+
+## Evaluation Script
