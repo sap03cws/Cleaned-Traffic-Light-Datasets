@@ -3,6 +3,6 @@ Various datasets on traffic light (TL) detection are aggregated and cleaned. The
 
 Admittedly, this repository is by no means complete, or original, but it is intended for rapid evaluation of traffic light detection algorithms. For that purpose, two simple scripts are provided - one that generate the needed dataset, and another that calculates accuracy.
 
-Copyrights belong to the owners of the respective datasets.
+Copyrights belong to the owners of their respective datasets.
 
 ## Generator Script
