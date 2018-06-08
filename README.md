@@ -3,7 +3,7 @@ Various datasets on traffic light (TL) detection are aggregated and cleaned. The
 
 Copyrights belong to the owners of their respective datasets.
 
-# Data Format
+# 0. Data Format
 Images can be in RGB or in grayscale. They can be resized, or not. Bounding boxes can be expressed in two pairs of coordinates or in one along with width and height information. Traffic lights can be categorized into three categories (red/yellow/green) or two (go/stop). Directional information on traffic lights can be conveyed, or not. In view of such a diverse range of formatting options, a script is provided to properly retrieve and format the data and their corresponding labels. That said, the general format is as follows:
 
 > /path/to/image/file; WIDTH; HEIGHT; 
@@ -29,7 +29,7 @@ For one last example, a line in the `.csv` file produced by running `sh gen.sh -
 
 > /home/wching/tld/data/img/0001.jpg;1920;1080;";;;;;"
 
-# Scripts
+# 1. Scripts
 While this repository is by no means complete, or original, it is intended for rapid evaluation of traffic light detection algorithms. For that purpose, two simple scripts are provided - one that generate the needed dataset, and another that calculates accuracy.
 
 ## Generation Script
@@ -42,7 +42,7 @@ While this repository is by no means complete, or original, it is intended for r
 #### bounding box
 #### traffic light signal
 
-# Functions
+# 2. Functions
 
 #### Bash
 #### C
